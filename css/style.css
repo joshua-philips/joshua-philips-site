@@ -1,0 +1,20 @@
+body {
+  background: url('../img/markus-spiske.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#showcase::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+
+#profile-pic {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
