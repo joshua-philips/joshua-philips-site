@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
     <title>Joshua Philips</title>
     <link rel="stylesheet" href="css/style.css" />
@@ -44,13 +45,13 @@
               <a href="" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
+              <a href="#about" class="nav-link">Bio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
             </li>
             <li class="nav-item">
               <a href="" class="nav-link">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
               <a href="" class="nav-link">Portfolio</a>
@@ -71,7 +72,7 @@
         <div class="d-sm-flex align-items-center justify-content-between">
           <div>
             <h1>Joshua <span class="text-warning">Senyi-Philips</span></h1>
-            <p class="lead text-white my-4 fw-normal">
+            <p class="lead text-white my-4">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
               repellat omnis aspernatur laboriosam aliquam ullam, corporis
               voluptatem praesentium.
@@ -110,9 +111,16 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn btn-dark rounded-circle m-3"
+                ><i class="bi-github h3"></i
+              ></a>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-dark rounded-circle m-3"
               >
                 <img
-                  src="img/behance_portfolio_icon.svg"
+                  src="resources/icons/behance_portfolio_icon.svg"
                   style="height: 35px; width: 25px"
                   alt=""
               /></a>
@@ -130,9 +138,9 @@
             </div>
           </div>
           <img
-            src="img/profile_pic.jpg"
+            src="resources/img/profile_pic.jpg"
             alt=""
-            class="img-fluid d-sm-block border m-5"
+            class="img-fluid d-sm-block border mt-4 mt-md-0 my-5"
             id="profile-pic"
           />
         </div>
@@ -145,7 +153,7 @@
         <div class="card bg-black p-5 bg-opacity-75">
           <div class="card-title">
             <h3 class="mb-3 mb-md-0 pb-3">
-              <span class="border-bottom border-warning pb-2">
+              <span class="border-bottom border-warning pb-2 section-header">
                 LEARN MORE ABOUT ME</span
               >
             </h3>
@@ -160,6 +168,11 @@
                   officia consequatur repellat aliquam, eius ipsa harum nihil
                   doloremque voluptate sapiente veniam facilis error rerum
                   beatae libero magni adipisci at optio dolorem? Corporis.
+                </p>
+                <p>
+                  I love building new projects and challenging myslef to learn
+                  new things in the process I'm looking for opportunities to
+                  join teams where I could apply my skills.
                 </p>
               </div>
               <div class="col-md">
@@ -180,7 +193,7 @@
                     class="list-group-item bg-black bg-transparent text-light"
                   >
                     <i class="bi-chevron-right"></i>
-                    <span class="fw-bold">Birthday: </span>July 4, 1996
+                    <span class="fw-bold">Age: </span>25
                   </li>
                   <li
                     class="list-group-item bg-black bg-transparent text-light"
@@ -188,6 +201,13 @@
                     <i class="bi-chevron-right"></i>
                     <span class="fw-bold">Alma Mata: </span>Adisadel College,
                     GCTU
+                  </li>
+                  <li
+                    class="list-group-item bg-black bg-transparent text-light"
+                  >
+                    <i class="bi-chevron-right"></i>
+                    <span class="fw-bold">Email: </span
+                    >philipsjoshua96@gmail.com
                   </li>
                   <li
                     class="list-group-item bg-black bg-transparent text-light"
@@ -208,6 +228,120 @@
         </div>
       </div>
     </section>
+
+    <!-- Skills -->
+    <section class="bg-black bg-opacity-50 text-light pt-5" id="skills">
+      <div class="container">
+        <div class="card bg-black p-5 bg-opacity-75">
+          <div class="card-title">
+            <h3 class="mb-3 mb-md-0 pb-3">
+              <span class="border-bottom border-warning pb-2 section-header">
+                SKILLS</span
+              >
+            </h3>
+          </div>
+          <div class="row row-cols-md-2">
+            <div class="col-md card bg-warning bg-opacity-50 py-2 mb-3">
+              <h4 class="py-0">Mobile App Development</h4>
+              <div class="d-flex align-items-center">
+                <div class="m-2">
+                  <img
+                    class="skills-icon m-1 img-fluid"
+                    src="resources/icons/flutter.svg"
+                  />
+                  <p class="skills-label text-center">Flutter</p>
+                </div>
+                <div class="m-2">
+                  <img
+                    class="skills-icon m-1 img-fluid"
+                    src="resources/icons/firebase_google_icon.png"
+                  />
+                  <p class="skills-label text-center">Firebase</p>
+                </div>
+                <div class="m-2">
+                  <img
+                    class="skills-icon m-1 img-fluid"
+                    src="resources/icons/Dart-logo.png"
+                  />
+                  <p class="skills-label text-center">Dart</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md card bg-secondary bg-opacity-50 py-2 mb-3">
+              <h4 class="py-0">Web Design</h4>
+              <div class="d-flex align-items-center">
+                <div class="m-2">
+                  <img
+                    class="skills-icon m-1 img-fluid"
+                    src="resources/icons/html5_icon.svg"
+                  />
+                  <p class="skills-label text-center">HTML</p>
+                </div>
+                <div class="m-2">
+                  <img
+                    class="skills-icon m-1 img-fluid"
+                    src="resources/icons/css3_html_logo_social_social media_icon.svg"
+                  />
+                  <p class="skills-label text-center">CSS</p>
+                </div>
+                <div class="m-2">
+                  <img
+                    class="skills-icon m-1 img-fluid"
+                    src="resources/icons/javascript-programming-language.svg"
+                  />
+                  <p class="skills-label text-center">JavaScript</p>
+                </div>
+                <div class="m-2">
+                  <i class="bi-bootstrap h1 mb-3"></i>
+                  <p class="skills-label text-center">Bootstrap</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md card bg-warning bg-opacity-50 py-2 mb-3">
+              <h4 class="py-0">UI/UX & Graphic Design</h4>
+              <div class="d-flex align-items-center">
+                <div class="m-2">
+                  <img
+                    class="skills-icon m-1 img-fluid"
+                    src="resources/icons/adobe-xd.svg"
+                  />
+                  <p class="skills-label text-center">Adobe XD</p>
+                </div>
+                <div class="m-2">
+                  <img
+                    class="skills-icon m-1 img-fluid"
+                    src="resources/icons/adobe-photoshop.svg"
+                  />
+                  <p class="skills-label text-center">Adobe Photoshop</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md card bg-secondary bg-opacity-50 py-2 mb-3">
+              <h4 class="py-0">Desktop Development</h4>
+              <div class="d-flex align-items-center">
+                <div class="m-2">
+                  <img
+                    class="skills-icon m-1 img-fluid"
+                    src="resources/icons/java_logo_logos_icon.svg"
+                  />
+                  <p class="skills-label text-center">Java</p>
+                </div>
+                <div class="m-2">
+                  <img
+                    class="skills-icon m-1 img-fluid"
+                    src="resources/icons/mysql.svg"
+                    style="object-fit: contain"
+                  />
+                  <p class="skills-label text-center">MySql</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
