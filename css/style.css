@@ -26,16 +26,24 @@ body {
   object-fit: cover;
 }
 
-.row .card {
+#skills .row .card {
   border-radius: 0;
 }
 
 .no-underline {
   text-decoration: none;
 }
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
 
 @media (max-width: 400px) {
   .section-header {
     font-size: smaller;
+  }
+
+  #bootstrap-skill {
+    display: none;
   }
 }
