@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('../resources/img/athul-cyriac-ajay.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -15,8 +15,8 @@ body {
 
 #profile-pic {
   border-radius: 50%;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   object-fit: cover;
 }
 
@@ -28,6 +28,10 @@ body {
 
 .row .card {
   border-radius: 0;
+}
+
+.no-underline {
+  text-decoration: none;
 }
 
 @media (max-width: 400px) {
