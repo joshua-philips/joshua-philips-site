@@ -283,10 +283,6 @@
                   />
                   <p class="skills-label text-center">JavaScript</p>
                 </div>
-                <div class="m-2" id="bootstrap-skill">
-                  <i class="bi-bootstrap h1 mb-3"></i>
-                  <p class="skills-label text-center">Bootstrap</p>
-                </div>
               </div>
             </div>
             <div class="col-md card bg-dark bg-opacity-50 py-2 mb-3">
@@ -304,12 +300,12 @@
                     class="skills-icon m-1 img-fluid"
                     src="resources/icons/adobe-photoshop.svg"
                   />
-                  <p class="skills-label text-center">Adobe Photoshop</p>
+                  <p class="skills-label text-center">Photoshop</p>
                 </div>
               </div>
             </div>
             <div class="col-md card bg-success bg-opacity-50 py-2 mb-3">
-              <h4 class="py-0">Desktop Development</h4>
+              <h4 class="py-0">Others</h4>
               <div class="d-flex align-items-center">
                 <div class="m-2">
                   <img
@@ -441,7 +437,52 @@
       </div>
     </section>
 
+    <!-- Contact -->
+    <section class="bg-black bg-opacity-50 text-light pt-5" id="contact-bottom">
+      <div class="container">
+        <div class="card bg-black p-5 bg-opacity-75">
+          <div class="card-title">
+            <h3 class="mb-3 mb-md-0 pb-3">
+              <span class="border-bottom border-warning pb-2 section-header">
+                CONTACT</span
+              >
+            </h3>
+          </div>
+          <form id="form-bottom">
+            <div class="mb-3">
+              <label for="email-bottom" class="form-label">Email address</label>
+              <input
+                type="email"
+                class="form-control has-validation"
+                id="email-bottom"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="subject-bottom" class="form-label">Subject</label>
+              <input
+                type="text"
+                class="form-control"
+                id="subject-bottom"
+                placeholder=""
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message-bottom" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message-bottom"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <!--  -->
+    <script src="src/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
