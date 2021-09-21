@@ -54,10 +54,13 @@
               <a href="#projects" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-              <a href="#resume" class="nav-link">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link btn btn-warning text-dark">Contact</a>
+              <a
+                href=""
+                class="nav-link btn btn-warning text-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#contactModal"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -141,7 +144,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="bg-black bg-opacity-50 text-light p-5" id="about">
+    <section class="bg-black bg-opacity-50 text-light py-5" id="about">
       <div class="container">
         <div class="card bg-black p-5 bg-opacity-75">
           <div class="card-title">
@@ -155,9 +158,33 @@
             <div class="row g4">
               <div class="col-md">
                 <p>
-                  I love building new projects and challenging myself to learn
-                  new things in the process I'm looking for opportunities to
-                  join teams where I could apply my skills.
+                  For as long as I can remember I've always had a passion for
+                  solving problems using technology. This passion along with my
+                  curiosity of how computers work is what drove me to pursue a
+                  career in software development.
+                </p>
+                <p class="d-none d-md-block">
+                  Being born to parents whose lives revolved around a diverse
+                  range of books influenced my drive to always keep learning. My
+                  theologian father was always looking to read anything his
+                  hands could grab a hold of no matter how obscure the subject.
+                  Constantly seeing that as a child made me curious of
+                  discoveries the world has to offer. In a very dynamic field
+                  like software development, this is not a bad attribute to
+                  have.
+                </p>
+                <p>
+                  Like any other field, software developers require experience
+                  in order to become better. I love undertaking projects and
+                  challenging myself, learning new things in the process. I'm
+                  looking for opportunities to join a team where I can apply my
+                  skills, learn new things and gain more experience becoming a
+                  better developer in the process.
+                </p>
+                <p class="d-none d-md-block">
+                  In my spare time I like to read. I write film reviews too. I
+                  am very passionate about music; playing the bass and singing
+                  in church anytime I can.
                 </p>
               </div>
               <div class="col-md">
@@ -166,7 +193,20 @@
                     class="list-group-item bg-black bg-transparent text-light"
                   >
                     <i class="bi-chevron-right"></i>
-                    <span class="fw-bold">Age: </span>25
+                    <span class="fw-bold">Email: </span
+                    >philipsjoshua96@gmail.com
+                  </li>
+                  <li
+                    class="list-group-item bg-black bg-transparent text-light"
+                  >
+                    <i class="bi-chevron-right"></i>
+                    <span class="fw-bold">Phone: </span>+233 509059563
+                  </li>
+                  <li
+                    class="list-group-item bg-black bg-transparent text-light"
+                  >
+                    <i class="bi-chevron-right"></i>
+                    <span class="fw-bold">Location: </span>Accra, Ghana
                   </li>
                   <li
                     class="list-group-item bg-black bg-transparent text-light"
@@ -194,25 +234,6 @@
                       >GCTU</a
                     >
                   </li>
-                  <li
-                    class="list-group-item bg-black bg-transparent text-light"
-                  >
-                    <i class="bi-chevron-right"></i>
-                    <span class="fw-bold">Email: </span
-                    >philipsjoshua96@gmail.com
-                  </li>
-                  <li
-                    class="list-group-item bg-black bg-transparent text-light"
-                  >
-                    <i class="bi-chevron-right"></i>
-                    <span class="fw-bold">Phone: </span>+233 509059563
-                  </li>
-                  <li
-                    class="list-group-item bg-black bg-transparent text-light"
-                  >
-                    <i class="bi-chevron-right"></i>
-                    <span class="fw-bold">Location: </span>Accra, Ghana
-                  </li>
                 </ul>
               </div>
             </div>
@@ -234,93 +255,124 @@
           </div>
           <div class="row row-cols-md-2">
             <div class="col-md card bg-warning bg-opacity-50 py-2 mb-3">
-              <h4 class="py-0">Mobile App Development</h4>
-              <div class="d-flex align-items-center">
-                <div class="m-2">
+              <h4 class="pb-2">Mobile App Development</h4>
+              <div
+                class="
+                  row row-cols-md-3
+                  align-items-center
+                  justify-content-start
+                "
+              >
+                <div class="m-2 col">
                   <img
                     class="skills-icon m-1 img-fluid"
                     src="resources/icons/flutter.svg"
                   />
-                  <p class="skills-label text-center">Flutter</p>
+                  <span class="skills-label text-center">Flutter</span>
                 </div>
-                <div class="m-2">
+                <div class="m-2 col">
                   <img
                     class="skills-icon m-1 img-fluid"
                     src="resources/icons/firebase_google_icon.png"
                   />
-                  <p class="skills-label text-center">Firebase</p>
+                  <span class="skills-label text-center">Firebase</span>
                 </div>
-                <div class="m-2">
+                <div class="m-2 col">
                   <img
                     class="skills-icon m-1 img-fluid"
                     src="resources/icons/Dart-logo.png"
                   />
-                  <p class="skills-label text-center">Dart</p>
+                  <span class="skills-label text-center">Dart</span>
                 </div>
               </div>
             </div>
             <div class="col-md card bg-secondary bg-opacity-50 py-2 mb-3">
-              <h4 class="py-0">Web Design</h4>
-              <div class="d-flex align-items-center">
-                <div class="m-2">
+              <h4 class="pb-2">Web Design</h4>
+              <div
+                class="
+                  row row-cols-md-3
+                  align-items-center
+                  justify-content-start
+                "
+              >
+                <div class="m-2 col">
                   <img
                     class="skills-icon m-1 img-fluid"
                     src="resources/icons/html5_icon.svg"
                   />
-                  <p class="skills-label text-center">HTML</p>
+                  <span class="skills-label text-center">HTML</span>
                 </div>
-                <div class="m-2">
+                <div class="m-2 col">
                   <img
                     class="skills-icon m-1 img-fluid"
                     src="resources/icons/css3_html_logo_social_social media_icon.svg"
                   />
-                  <p class="skills-label text-center">CSS</p>
+                  <span class="skills-label text-center">CSS</span>
                 </div>
-                <div class="m-2">
+                <div class="m-2 col">
                   <img
                     class="skills-icon m-1 img-fluid"
                     src="resources/icons/javascript-programming-language.svg"
                   />
-                  <p class="skills-label text-center">JavaScript</p>
+                  <span class="skills-label text-center">JavaScript</span>
+                </div>
+                <div class="m-2 col">
+                  <img
+                    class="skills-icon m-1 img-fluid"
+                    src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
+                  />
+                  <span class="skills-label text-center">Bootstrap</span>
                 </div>
               </div>
             </div>
             <div class="col-md card bg-dark bg-opacity-50 py-2 mb-3">
-              <h4 class="py-0">UI/UX & Graphic Design</h4>
-              <div class="d-flex align-items-center">
-                <div class="m-2">
+              <h4 class="pb-2">UI/UX & Graphic Design</h4>
+              <div
+                class="
+                  row row-cols-md-3
+                  align-items-center
+                  justify-content-start
+                "
+              >
+                <div class="m-2 col">
                   <img
                     class="skills-icon m-1 img-fluid"
                     src="resources/icons/adobe-xd.svg"
                   />
-                  <p class="skills-label text-center">Adobe XD</p>
+                  <span class="skills-label text-center">Adobe XD</span>
                 </div>
-                <div class="m-2">
+                <div class="m-2 col">
                   <img
                     class="skills-icon m-1 img-fluid"
                     src="resources/icons/adobe-photoshop.svg"
                   />
-                  <p class="skills-label text-center">Photoshop</p>
+                  <span class="skills-label text-center">Photoshop</span>
                 </div>
               </div>
             </div>
             <div class="col-md card bg-success bg-opacity-50 py-2 mb-3">
-              <h4 class="py-0">Others</h4>
-              <div class="d-flex align-items-center">
-                <div class="m-2">
+              <h4 class="py-0">Backend Development</h4>
+              <div
+                class="
+                  row row-cols-md-3
+                  align-items-center
+                  justify-content-start
+                "
+              >
+                <div class="m-2 col">
                   <img
                     class="skills-icon m-1 img-fluid"
                     src="resources/icons/java_logo_logos_icon.svg"
                   />
-                  <p class="skills-label text-center">Java</p>
+                  <span class="skills-label text-center">Java</span>
                 </div>
-                <div class="m-2">
+                <div class="m-2 col">
                   <img
                     class="skills-icon m-1 img-fluid"
                     src="resources/icons/mysql.svg"
                     style="object-fit: contain"
                   />
-                  <p class="skills-label text-center">MySql</p>
+                  <span class="skills-label text-center">MySql</span>
                 </div>
               </div>
             </div>
@@ -367,16 +419,23 @@
                   <div
                     class="d-flex align-items-center justify-content-between"
                   >
-                    <a href="#" class="btn btn-warning">Read More</a>
+                    <a href="#" class="btn btn-warning d-none">Read More</a>
                     <div>
-                      <a href="" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://www.behance.net/gallery/125791007/Book-Logging-App"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <img
                           src="resources/icons/behance.svg"
                           class="mx-2 h3"
                           style="height: 35px; width: 25px"
                           alt=""
                       /></a>
-                      <a href="" target="_blank" class="mx-2"
+                      <a
+                        href="https://github.com/joshua-philips/read_log"
+                        target="_blank"
+                        class="mx-2"
                         ><i class="bi-github link-light h3"></i
                       ></a>
                     </div>
@@ -400,9 +459,13 @@
                   <div
                     class="d-flex align-items-center justify-content-between"
                   >
-                    <a href="#" class="btn btn-warning">Read More</a>
+                    <a href="#" class="btn btn-warning d-none">Read More</a>
                     <div>
-                      <a href="" target="_blank" rel="noopener noreferrer">
+                      <a
+                        href="https://www.behance.net/gallery/125514203/Healthcare-App"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <img
                           src="resources/icons/behance.svg"
                           class="mx-2 h3"
@@ -433,12 +496,20 @@
               </div>
             </div>
           </div>
+          <!-- <div class="card-footer mt-5">
+            <a href="" class="no-underline h4 link-warning"
+              >See More Projects</a
+            >
+          </div> -->
         </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section class="bg-black bg-opacity-50 text-light pt-5" id="contact-bottom">
+    <section
+      class="bg-black bg-opacity-50 text-light pt-5 pb-5"
+      id="contact-bottom"
+    >
       <div class="container">
         <div class="card bg-black p-5 bg-opacity-75">
           <div class="card-title">
@@ -455,7 +526,7 @@
                 type="email"
                 class="form-control has-validation"
                 id="email-bottom"
-                placeholder="name@example.com"
+                required
               />
             </div>
             <div class="mb-3">
@@ -465,6 +536,7 @@
                 class="form-control"
                 id="subject-bottom"
                 placeholder=""
+                required
               />
             </div>
             <div class="mb-3">
@@ -473,6 +545,7 @@
                 class="form-control"
                 id="message-bottom"
                 rows="3"
+                required
               ></textarea>
             </div>
             <button type="submit" class="btn btn-warning">Submit</button>
@@ -481,6 +554,73 @@
       </div>
     </section>
 
+    <!-- Contact Modal -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title" id="contactModalLabel">
+              <span class="border-bottom border-warning pb-2">CONTACT</span>
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="form-modal">
+              <div class="mb-3">
+                <label for="email-modal" class="col-form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email-modal"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="subject-modal" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject-modal"
+                  placeholder=""
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message-modal" class="col-form-label"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message-modal"
+                  required
+                ></textarea>
+              </div>
+              <div class="modal-footer border-top-0">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="submit" class="btn btn-warning">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--  -->
     <script src="src/index.js"></script>
     <script
