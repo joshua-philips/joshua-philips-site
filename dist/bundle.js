@@ -25950,8 +25950,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: 'AIzaSyBpapOthSWym9t_q_dpb10SEGkQgVcrYHw',
   authDomain: 'joshua-philips-site.firebaseapp.com',
@@ -26014,7 +26012,7 @@ async function uploadMessage(email, subject, message) {
     messageSubject: subject,
     messageBody: message,
     date: firebase_firestore__WEBPACK_IMPORTED_MODULE_2__.Timestamp.now(),
-  }).then(() => console.log('Success'));
+  });
 }
 
 // Message sent alert

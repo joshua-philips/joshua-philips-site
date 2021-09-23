@@ -2,8 +2,6 @@ import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
 import { getFirestore, setDoc, doc, Timestamp } from 'firebase/firestore';
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: 'AIzaSyBpapOthSWym9t_q_dpb10SEGkQgVcrYHw',
   authDomain: 'joshua-philips-site.firebaseapp.com',
@@ -66,7 +64,7 @@ async function uploadMessage(email, subject, message) {
     messageSubject: subject,
     messageBody: message,
     date: Timestamp.now(),
-  }).then(() => console.log('Success'));
+  });
 }
 
 // Message sent alert
