@@ -1,3 +1,24 @@
+import { initializeApp } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
+import { getFirestore, setDoc, doc, Timestamp } from 'firebase/firestore';
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: 'AIzaSyBpapOthSWym9t_q_dpb10SEGkQgVcrYHw',
+  authDomain: 'joshua-philips-site.firebaseapp.com',
+  projectId: 'joshua-philips-site',
+  storageBucket: 'joshua-philips-site.appspot.com',
+  messagingSenderId: '374270567164',
+  appId: '1:374270567164:web:f4f7fb41ed3e6d62a7ed79',
+  measurementId: 'G-05XEBYWR4B',
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const analytics = getAnalytics(app);
+
 const contactModal = new bootstrap.Modal(
   document.getElementById('contactModal'),
   {}
@@ -39,7 +60,13 @@ bottomForm.addEventListener('submit', (e) => {
 
 // Upload Message to Firebase
 async function uploadMessage(email, subject, message) {
-  console.log(email, subject, message);
+  let date = Date.now().toString();
+  await setDoc(doc(db, 'messages', date), {
+    senderEmail: email,
+    messageSubject: subject,
+    messageBody: message,
+    date: Timestamp.now(),
+  }).then(() => console.log('Success'));
 }
 
 // Message sent alert
